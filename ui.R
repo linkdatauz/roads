@@ -66,8 +66,11 @@ ui <- fluidPage(
                            column( width = 6, h4("Hodisalar sodir bo'lgan hafta kunlari ulushi"), plotlyOutput('plot10')  ) ),
              )
     ),
-    tabPanel("Map", 
-             fluidRow(id = "map-row", leafletOutput(outputId = 'map', width = "100%", height = "710px"))
+    tabPanel("To'qnashuvlar", 
+             fluidRow(id = "map-row", leafletOutput(outputId = 'tmap', width = "100%", height = "710px"))
+    ),
+    tabPanel("Piyoda urib yuborishlar", 
+             fluidRow(id = "map-row", leafletOutput(outputId = 'pmap', width = "100%", height = "710px"))
     )
   )
 )
